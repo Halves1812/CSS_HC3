@@ -1,0 +1,152 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+   /* color: black; /*cor da fonte*/
+    font-family: 'Poppins', sans-serif;
+}
+
+ul{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+body{
+    /*bacground com imagem
+    background-image: url(./imagens/background.jpg);
+    background-repeat: no-repeat;
+    background-position: center center fixed;
+    background-size: cover;*/
+
+    /*background com cor
+    background-color: aqua;*/
+
+    /*background gradiente*/
+    background: linear-gradient(90deg, #3b8d99 , #6b6b83, #aa4b6b);
+}
+
+header{
+        display:flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 5px;
+}
+
+header img{
+    max-width: 250px;
+    }
+header ul{
+    display: flex;
+}
+header ul li{
+    padding: 5px;
+    font-size: 50px;
+    
+}
+header ul li a{
+    color: #3b8d99;
+    transition: 300ms;
+}
+header ul li a:hover{
+    color: aqua;
+}
+
+.container{
+    text-align: center;
+}
+.name h1{
+    font-size: 50px;
+}
+#arrow{
+    font-size: 25px;
+    cursor: pointer;
+}
+
+#animation{
+    transition: 300ms;
+}
+.rotate{
+    transform: rotate(180deg);
+    transition: 300ms;
+}
+.active{
+    display: block !important; 
+}
+#about p{
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: justify;
+    margin-bottom: 30px;
+}
+
+.form{
+    width: 40%;
+    margin: 0 auto;
+    margin-top: 30px;
+}
+.form input{
+    width: 50%;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px 0px 0px 5px;
+}
+
+.form button{
+    width: 15%;
+    padding: 5px 10px;
+    background: linear-gradient(to right, #aa4b6b, #3b8d99);
+    background-size: 200% 100%;
+    background-position: right bottom;
+    border: none;
+    cursor: pointer;
+    transition: 300ms;
+    border-radius: 0px 5px 5px 0px;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    margin-left: -5px;
+
+}
+.form button:hover{
+    background-position: left bottom;
+
+}
+
+.grid{
+    margin-top: 50px;
+    display: grid;
+    /*max-width: 50%;*/
+    justify-items: center;
+    grid-template-rows: auto;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+    row-gap: 30px;
+    
+}
+
+.grid div h1{
+    color: white;
+}
+.grid div p{
+    text-align: justify;
+}
+
+@media only screen and (max-width: 480px){
+   header{
+    box-sizing:content-box;    
+   }
+   header img{
+    max-width: 150px;
+   }
+    .form{
+        width: 100%;
+    }
+    .grid div h1{
+        font-size: 15px;
+    }
+    .grid div p{
+        font-size: 10px;
+    }
+}

@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/ece35563d2.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;1,200;1,600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <title>Hitalo C Alves</title>
+</head>
+<body>
+    <header>
+        <div>
+            <img src="./imagens/logo.png" alt="LogoH">            
+        </div>
+        <div>
+            
+        </div>
+        <ul>
+            <li>
+                <a target="_blank" href="https://github.com/Halves1812"><i class="fa-brands fa-github-square"></i></a>
+            </li>
+            <li>
+                <a target="_blank" href="mailto:halves1812@gmail.com"><i class="fa-solid fa-envelope"></i></a>
+            </li>
+            <li>
+                <a target="_blank" href="https://www.linkedin.com/in/hitalo-do-carmo-alves-991648226"><i class="fa-brands fa-linkedin"></i></a>
+            </li>
+            <li>
+                <a target="_blank" href="https://wa.me/+5541998807050"><i class="fa-brands fa-whatsapp-square"></i></a>
+            </li>
+        </ul>
+    </header>
+    <main>
+        <section class="container">
+            <div class="name">
+              <h1>Hitalo C Alves</h1>
+              <h5>Aprendiz de Dev</h5>  
+            </div>
+
+            <div onclick="displayAbout()" id="arrow">
+                <i id="animation" class="fas fa-sort-down"></i>
+            </div>
+            <div style="display: none;" id="about">
+                <p>
+                    Olá. 
+                    Sou um Administrador e logo um Analista de Sistemas. 
+                    Minha principal experiência profissional foi na Justiça Eleitoral, onde iniciei o contato com TI. 
+                    Desde então me apaixonei pelo desenvolvimento de sistemas.
+                </p>
+            </div>
+            <div class="grid">
+                <div>
+                    <h1>
+                        Formação Atual
+                    </h1>
+                    <p>
+                        Análise e Desebvolvimento de Sistemas<br>
+                        IFPR - Intituto Federal do Paraná<br>
+                        2021 - cursando
+                    </p>
+                </div>
+                <div>
+                    <h1>
+                        Formação Anterior
+                    </h1>
+                    <p>
+                        Administração de Empresas<br>
+                        UNIEXP - Unidade de Ensino Superior Expoente<br>
+                        2008 - 2011
+                    </p>
+                </div>
+                <div>
+                    <h1>
+                        Experiência Internacional
+                    </h1>
+                    <p>
+                        Intercâmbio - Engenharia Informática<br>
+                        IPB - Instituto Politécnico de Bragança - Portugal<br>
+                        2022 - cursando
+                    </p>
+                </div>
+            </div>
+
+            <div class="form">
+                <div>
+                    <p>
+                     Deixe seu contato ;)   
+                    </p>
+                </div>
+                <form action="">
+                    <input type="text" placeholder="Digite seu e-mail!">
+                    <button>enviar!</button>
+
+                </form>
+            </div>
+
+        </section>
+
+    </main>
+    <script>
+        function displayAbout(){
+            var arrow = document.getElementById('animation');
+            arrow.classList.toggle('rotate');
+            var display = document.getElementById('about');
+            display.classList.toggle('active');
+        }
+    </script>
+</body>
+</html>
